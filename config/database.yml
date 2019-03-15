@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  username : alexandre
+  password : 16011970
+
+development:
+  <<: *default
+  database: contact_list_development
+
+test:
+  <<: *default
+  database: contact_list_test
+
+production:
+  <<: *default
+  database: contact_list_production
