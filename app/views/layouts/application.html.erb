@@ -10,6 +10,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'layouts/header' %> <!-- partial on _header.html.erb -->
+    <div class="container">
+       <%= yield %>   
+       <%= render 'layouts/footer' %> <!-- partial on _footer.html.erb -->
+    </div>
   </body>
 </html>
